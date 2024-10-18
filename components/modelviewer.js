@@ -33,7 +33,7 @@ const ModelViewer = ({ fbxUrl }) => {
   }, [fbxUrl]);
 
   return (
-    <Canvas camera={{ position: [3, 2, 5], fov: 100 }}>
+    <Canvas camera={{ position: [3, 2, 5], fov: 80 }}>
       <ambientLight intensity={0.5} />
       <directionalLight position={[5, 5, 5]} />
 
