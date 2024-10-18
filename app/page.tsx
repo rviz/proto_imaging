@@ -5,10 +5,10 @@ export default function Home() {
   return (
     <div className="h-screen w-screen flex flex-col items-center justify-center bg-slate-200">
       <div className="z-10 top-[2%] absolute w-3/5 flex flex-col items-center justify-center bg-transparent  p-10 rounded-lg">
-        <h1 className="text-6xl text-geniallyblue-100 font-semibold">
+        <h1 className="text-[298px] text-geniallyblue-100 font-semibold">
           VIRTUAL
         </h1>
-        <h1 className="text-6xl text-geniallyblue-100 font-semibold">
+        <h1 className="text-[298px] text-geniallyblue-100 font-semibold">
           REALITY
         </h1>
       </div>
