@@ -19,7 +19,7 @@ export default function Home() {
         className="z-10 bottom-[2%] absolute mb-10 group inline-block rounded bg-gradient-to-r from-cyan-500 via-indigo-500 to-blue-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75"
         href="https://view.genially.com/669c0d9d9c64fa04779654a2"
       >
-        <span className="block rounded-sm bg-geniallyblue-100 px-12 py-3 text-xl font-medium group-hover:bg-transparent">
+        <span className="block rounded-sm bg-geniallyblue-100 px-36 py-14 text-5xl group-hover:bg-transparent text-white font-bold">
           Iniciar
         </span>
       </a>
