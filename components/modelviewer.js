@@ -33,7 +33,7 @@ const ModelViewer = ({ fbxUrl }) => {
   }, [fbxUrl]);
 
   return (
-    <Canvas camera={{ position: [3, 2, 5], fov: 80 }}>
+    <Canvas camera={{ position: [3, 2, 5], fov: 120 }}>
       <ambientLight intensity={0.5} />
       <directionalLight position={[5, 5, 5]} />
 
@@ -41,7 +41,7 @@ const ModelViewer = ({ fbxUrl }) => {
         <group ref={modelRef} />
       </Suspense>
 
-      <OrbitControls enableZoom={true} />
+      {/* <OrbitControls enableZoom={true} /> */}
     </Canvas>
   );
 };
