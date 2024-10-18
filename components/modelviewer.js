@@ -41,7 +41,7 @@ const ModelViewer = ({ fbxUrl }) => {
         <group ref={modelRef} />
       </Suspense>
 
-      <OrbitControls enableZoom={true} />
+      <OrbitControls />
     </Canvas>
   );
 };
