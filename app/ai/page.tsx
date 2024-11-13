@@ -16,19 +16,27 @@ export default function Ai() {
       <ModelViewer fbxUrl="/models/modelai.fbx" />
 
       <a
-        className="z-10 bottom-[17%] absolute  group inline-block rounded bg-gradient-to-r from-cyan-500 via-indigo-500 to-blue-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75"
+        className="z-10 w-screen bottom-[17%] absolute  group inline-block rounded bg-gradient-to-r from-cyan-500 via-indigo-500 to-blue-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75"
         href="https://view.genially.com/67106c44777742c8289b547d"
       >
-        <span className="block rounded-sm bg-geniallyblue-100 px-24 py-10 text-[40px] group-hover:bg-transparent text-white font-bold">
-          Click aquí para iniciar
+        <span className="flex items-center rounded-sm bg-geniallyblue-100 w-full py-10 text-[40px] group-hover:bg-transparent text-white font-bold">
+          <div className="absolute left-[20px]">
+            <Image
+              src="/rocket2-32.png"
+              alt="rocket icon"
+              width={32}
+              height={32}
+            />
+          </div>
+          <div className="absolute left-[80px]">Click aquí para iniciar</div>
         </span>
       </a>
       <Image
         src="/logomostla.png"
         alt="logo de mostla"
-        width={200}
-        height={200}
-        className="bottom-[10%] absolute"
+        width={300}
+        height={300}
+        className="bottom-[8%] absolute"
       ></Image>
     </div>
   );
