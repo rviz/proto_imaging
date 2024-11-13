@@ -17,7 +17,7 @@ export default function Ai() {
 
       <a
         className="z-10 bottom-[17%] absolute  group inline-block rounded bg-gradient-to-r from-cyan-500 via-indigo-500 to-blue-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75"
-        href="https://view.genially.com/669c0d9d9c64fa04779654a2"
+        href="https://view.genially.com/67106c44777742c8289b547d"
       >
         <span className="block rounded-sm bg-geniallyblue-100 px-24 py-10 text-[40px] group-hover:bg-transparent text-white font-bold">
           Click aquí para iniciar
