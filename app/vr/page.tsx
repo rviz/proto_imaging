@@ -16,13 +16,28 @@ export default function Vr() {
       <ModelViewer fbxUrl="/models/modelvr.fbx" />
 
       <a
-        className="z-10 bottom-[7%] absolute  group inline-block rounded bg-gradient-to-r from-cyan-500 via-indigo-500 to-blue-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75"
+        className="z-10 w-screen bottom-[19%] absolute  group inline-block rounded bg-gradient-to-r from-cyan-500 via-indigo-500 to-blue-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75"
         href="https://view.genially.com/669c0d9d9c64fa04779654a2"
       >
-        <span className="block rounded-sm bg-geniallyblue-100 px-24 py-10 text-[40px] group-hover:bg-transparent text-white font-bold">
-          Click aquí para iniciar
+        <span className="flex items-center rounded-sm bg-geniallyblue-100 w-full py-12 text-[40px] group-hover:bg-transparent text-white font-bold">
+          <div className="absolute left-[20px]">
+            <Image
+              src="/rocket2-32.png"
+              alt="rocket icon"
+              width={32}
+              height={32}
+            />
+          </div>
+          <div className="absolute left-[80px]">Click aquí para iniciar</div>
         </span>
       </a>
+      <Image
+        src="/logomostla.png"
+        alt="logo de mostla"
+        width={400}
+        height={400}
+        className="bottom-[6%] absolute"
+      ></Image>
     </div>
   );
 }
