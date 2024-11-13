@@ -32,11 +32,11 @@ export default function Ai() {
         </span>
       </a>
       <Image
-        src="/logomostla.png"
+        src="/logomostlan.png"
         alt="logo de mostla"
         width={400}
         height={400}
-        className="bottom-[6%] absolute"
+        className="bottom-[7%] absolute"
       ></Image>
     </div>
   );
