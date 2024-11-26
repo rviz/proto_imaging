@@ -33,7 +33,7 @@ export default function Vr() {
       </a>
       <Image
         src="/logomostlan.png"
-        alt="logo de mostla"
+        alt="Logo de mostla"
         width={400}
         height={400}
         className="bottom-[7%] absolute"
