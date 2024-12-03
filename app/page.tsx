@@ -23,6 +23,12 @@ export default function Home() {
           Virtual Reality
         </Link>
       </div>
+
+      <div>
+        <Link href="/credblock" className="">
+          Credenciales Academicas con Blockchain
+        </Link>
+      </div>
     </div>
   );
 }
