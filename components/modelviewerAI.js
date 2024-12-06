@@ -1,48 +1,37 @@
 "use client";
 import React, { Suspense, useEffect, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
-import { FBXLoader } from "three-stdlib";
+import { OrbitControls, useGLTF, useAnimations } from "@react-three/drei";
 
-const ModelViewer = ({ fbxUrl }) => {
-  const modelRef = useRef();
-  console.log("ModelViewer is rendering with fbxUrl:", fbxUrl);
+// Child component that uses R3F hooks must be inside Canvas
+function Model({ glbUrl }) {
+  const groupRef = useRef();
+  const { scene, animations } = useGLTF(glbUrl);
+  const { actions } = useAnimations(animations, groupRef);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      const loader = new FBXLoader();
-
-      console.log("Starting to load FBX model...");
-
-      loader.load(
-        fbxUrl,
-        (fbx) => {
-          console.log("FBX model loaded:", fbx);
-          fbx.scale.set(1, 1, 1);
-
-          modelRef.current.add(fbx);
-        },
-        undefined,
-        (error) => {
-          console.error("Error loading FBX model:", error);
-        }
-      );
-    }, 100); // Adjust time as necessary
-
-    return () => clearTimeout(timer); // Cleanup the timer
-  }, [fbxUrl]);
+    // If the model has animations, play the first one by default
+    if (actions && Object.keys(actions).length > 0) {
+      const defaultActionName = Object.keys(actions)[0];
+      actions[defaultActionName].play();
+    }
+  }, [actions]);
 
   return (
-    <Canvas camera={{ position: [2, 0, 10], fov: 105 }}>
+    <group ref={groupRef} scale={[1.4, 1.4, 1.4]} position={[0, -1, 0]}>
+      <primitive object={scene} />
+    </group>
+  );
+}
+
+const ModelViewer = ({ glbUrl }) => {
+  return (
+    <Canvas camera={{ position: [0, 0, 2], fov: 120 }}>
       <ambientLight intensity={0.5} />
       <directionalLight position={[5, 5, 5]} />
 
-      <Suspense fallback={<div>Loading model...</div>}>
-        <group
-          ref={modelRef}
-          scale={[0.07, 0.07, 0.07]}
-          position={[0, -5, 0]}
-        />
+      <Suspense fallback={"Loading model..."}>
+        <Model glbUrl={glbUrl} />
       </Suspense>
 
       <OrbitControls />
