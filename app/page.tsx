@@ -1,5 +1,4 @@
 import Image from "next/image";
-import ModelViewer from "../components/modelviewer";
 import Link from "next/link";
 import { Montserrat } from "next/font/google";
 
@@ -11,22 +10,25 @@ const montserrat = Montserrat({
 
 export default function Home() {
   return (
-    <div className="{montserrat}">
+    <div className="{montserrat} ml-6 mt-6">
+      <p className="text-4xl font-bold">Mostla Protos</p>
+      <p className="text-2xl font-bold mb-4">Pantallas Iniciales</p>
+      
       <div>
         <Link href="/ai" className="">
-          Artificial Intelligence
+          <p className="text-2xl text-cyan-800 underline">Artificial Intelligence</p>
         </Link>
       </div>
 
       <div>
         <Link href="/vr" className="">
-          Virtual Reality
+        <p className="text-2xl text-cyan-800 underline">Virtual Reality</p>
         </Link>
       </div>
 
       <div>
-        <Link href="/credblock" className="">
-          Credenciales Academicas con Blockchain
+        <Link href="/blockchain" className="">
+        <p className="text-2xl text-cyan-800 underline">Blockchain</p>
         </Link>
       </div>
     </div>

@@ -13,7 +13,7 @@ export default function Ai() {
         </h1>
       </div>
 
-      <ModelViewer glbUrl="/models/otravezxd.glb" />
+      <ModelViewer glbUrl="/models/modelai.glb" />
 
       <a
         className="z-10 w-screen bottom-[19%] absolute  group inline-block rounded bg-gradient-to-r from-cyan-500 via-indigo-500 to-blue-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75"

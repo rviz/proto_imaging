@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ModelViewer from "../../components/modelviewer";
+import ModelViewer from "../../components/modelviewerVR";
 
 export default function Vr() {
   return (
@@ -13,7 +13,7 @@ export default function Vr() {
         </h1>
       </div>
 
-      <ModelViewer fbxUrl="/models/modelvr.fbx" />
+      <ModelViewer glbUrl="/models/vr2.glb" />
 
       <a
         className="z-10 w-screen bottom-[19%] absolute  group inline-block rounded bg-gradient-to-r from-cyan-500 via-indigo-500 to-blue-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75"
