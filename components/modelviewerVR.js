@@ -1,7 +1,7 @@
 "use client";
 import React, { Suspense, useEffect, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, useGLTF, useAnimations } from "@react-three/drei";
+import { OrbitControls, useGLTF, useAnimations } from "@react-three/drei"; // Import THREE
 
 // Child component that uses R3F hooks must be inside Canvas
 function Model({ glbUrl }) {
@@ -18,7 +18,7 @@ function Model({ glbUrl }) {
   }, [actions]);
 
   return (
-    <group ref={groupRef} scale={[1.9, 1.9, 1.9]} position={[0, -1, 0]}>
+    <group ref={groupRef} scale={[4.9, 4.9, 4.9]} position={[0, 0.5, 0]}>
       <primitive object={scene} />
     </group>
   );
@@ -26,9 +26,9 @@ function Model({ glbUrl }) {
 
 const ModelViewer = ({ glbUrl }) => {
   return (
-    <Canvas camera={{ position: [2, 1, 3], fov: 120 }}>
-      <ambientLight intensity={0.5} />
-      <directionalLight position={[0, 0, 4]} />
+    <Canvas camera={{ position: [-6, 4, -7], fov: 120 }}>
+      <ambientLight intensity={1.26} exposure={1.08} />
+      <directionalLight position={[0, 0, 4]} intensity={1.26} exposure={1.08} />
 
       <Suspense fallback={"Loading model..."}>
         <Model glbUrl={glbUrl} />
