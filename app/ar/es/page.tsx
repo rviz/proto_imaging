@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ModelViewer from "../../../components/modelviewerBC";
+import ModelViewer from "../../../components/modelviewerAR";
 
 export default function Ai() {
   return (

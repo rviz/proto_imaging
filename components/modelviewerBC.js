@@ -18,7 +18,7 @@ function Model({ glbUrl }) {
   }, [actions]);
 
   return (
-    <group ref={groupRef} scale={[1.7, 1.7, 1.7]} position={[0, -2, 0]}>
+    <group ref={groupRef} scale={[1.9, 1.9, 1.9]} position={[0, -2, 0]}>
       <primitive object={scene} />
     </group>
   );
@@ -26,7 +26,7 @@ function Model({ glbUrl }) {
 
 const ModelViewer = ({ glbUrl }) => {
   return (
-    <Canvas camera={{ position: [0, 0, 3], fov: 120 }}>
+    <Canvas camera={{ position: [-3, 0, 3], fov: 120 }}>
       <ambientLight intensity={0.5} />
       <directionalLight position={[0, 0, 4]} />
 

@@ -45,7 +45,7 @@ export default function Home() {
             <li className="text-2xl text-cyan-800 underline">Telepresencia</li>
           </Link>
           <Link href="/biom/es" className="">
-            <li className="text-2xl text-cyan-800 underline">Biometrics</li>
+            <li className="text-2xl text-cyan-800 underline">Biometricos</li>
           </Link>
         </ul>
 
@@ -70,7 +70,7 @@ export default function Home() {
             </li>
           </Link>
           <Link href="/tele/en" className="">
-            <li className="text-2xl text-cyan-800 underline">Teleprescence</li>
+            <li className="text-2xl text-cyan-800 underline">Telepresence</li>
           </Link>
           <Link href="/biom/en" className="">
             <li className="text-2xl text-cyan-800 underline">Biometrics</li>
