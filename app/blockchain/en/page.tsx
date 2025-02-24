@@ -22,7 +22,7 @@ export default function Ai() {
       <ModelViewer glbUrl="/models/blockshein.glb" />
 
       <a
-        className="z-10 w-screen bottom-[19%] absolute  group inline-block rounded bg-gradient-to-r from-cyan-500 via-indigo-500 to-blue-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75"
+        className="z-10 w-screen bottom-[19%] absolute  group inline-block bg-gradient-to-r bg-mostlablue-100 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75"
         href="https://view.genially.com/66eb1451e5d6a0d788d40991"
       >
         <span className="flex items-center rounded-sm bg-mostlablue-100 w-full py-12 text-[40px] group-hover:bg-transparent text-white font-bold">
