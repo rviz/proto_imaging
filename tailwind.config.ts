@@ -9,8 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        geniallyblue: {
-          100: "#452CE1"},
+        mostlablue: {
+          100: "#452BE0"},
+        mostlawhite: {
+          100: "#f4f4f4"},
+        mostlablack: {
+          100: "#131314"},
+        mostlagray: {
+          100: "#7A8386"},
         background: "var(--background)",
         foreground: "var(--foreground)",
       },

@@ -1,16 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
-import { Montserrat } from "next/font/google";
-
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-});
 
 export default function Home() {
   return (
-    <div className="{montserrat} ml-6 mt-6">
+    <div className="ml-6 mt-6">
       <p className="text-4xl font-bold">Mostla Protos</p>
       <div className="flex flex-nowrap">
         <p className="text-2xl font-bold mr-2">
